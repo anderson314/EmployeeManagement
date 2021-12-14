@@ -72,10 +72,10 @@ namespace EmployeeManagement
                 });*/
             });
 
-            app.Run(async (context) =>
-            {
-               // await context.Response.WriteAsync("Hello World: " + env.EnvironmentName);
-            });
+            //app.Run(async (context) =>
+            //{
+            //   // await context.Response.WriteAsync("Hello World: " + env.EnvironmentName);
+            //});
 
         }
     }
