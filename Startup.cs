@@ -31,7 +31,7 @@ namespace EmployeeManagement
                 options => options.UseSqlServer(_config.GetConnectionString("EmployeeDBConnection")));
 
             services.AddMvc();
-            services.AddSingleton<IEmployeeRepository, MockEmployeeRepository>();
+            services.AddScoped<IEmployeeRepository, SQLEmployeeRepository>();
             //'MvcOptions.EnableEndpointRouting = false' inside
         }
 
